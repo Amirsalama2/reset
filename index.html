@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Waybill Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>🧾 Waybill Generator</h2>
+      <div class="logo-container">
+        <img src="./Background.jpg" alt="Company Logo" class="logo">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="customerName">: العميل</label>
+      <input id="customerName" type="text" placeholder=": العميل" />
+      <div id="customerNameError" class="error">Customer name is required</div>
+    </div>
+
+    <div class="form-group">
+      <label for="customerPhone">: تيلفون العميل</label>
+      <input id="customerPhone" type="text" placeholder=": تيلفون العميل" />
+      <div id="customerPhoneError" class="error">Phone number is required</div>
+    </div>
+
+    <div class="form-group">
+      <label for="userName">: المستخدم</label>
+      <input id="userName" type="text" placeholder=": المستخدم" />
+      <div id="userNameError" class="error">User name is required</div>
+    </div>
+
+    <h3>تفاصيل الاوردرات  </h3>
+    <table id="orderTable">
+      <thead>
+        <tr>
+          <th>كود الصنف</th>
+          <th>الصنف</th>
+          <th>العدد</th>
+          <th>السعر</th>
+          <th>السعر الاجمالي</th>
+          <th>الامر</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+      <tfoot>
+        <tr class="grand-total">
+          <td colspan="4" style="text-align: right;">الاجمالي:</td>
+          <td id="grandTotal">0.00</td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <button class="add-btn" onclick="addOrder()">➕  اضافه صنف</button>
+    <button class="print-btn" onclick="printWaybill()">🖨️ طباعه فاتوره</button>
+    <div id="printSuccess" class="success">تم الطباعه بنجاح!</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

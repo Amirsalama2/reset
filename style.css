@@ -1,0 +1,122 @@
+body { 
+  font-family: Arial, sans-serif; 
+  background: #f4f4f9; 
+  padding: 20px; 
+  direction: rtl;
+}
+
+.container { 
+  max-width: 800px; 
+  margin: auto; 
+  background: white; 
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px #ccc; 
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.logo-container {
+  margin-left: 20px;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  align-items: center;
+}
+
+h2 { 
+  text-align: center; 
+  color: #333; 
+  flex-grow: 1;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label { 
+  display: block; 
+  margin-top: 10px; 
+  margin-bottom: 5px;
+  font-weight: bold; 
+  color: #555; 
+  text-align: right;
+}
+
+input { 
+  width: 100%; 
+  padding: 8px; 
+  margin-top: 4px; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  box-sizing: border-box; 
+  text-align: right;
+  direction: rtl;
+}
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  margin-top: 15px; 
+  direction: rtl;
+}
+
+th, td { 
+  border: 1px solid #ccc; 
+  padding: 8px; 
+  text-align: right; 
+}
+
+th { 
+  background-color: #f8f9fa; 
+}
+
+button { 
+  margin-top: 15px; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-weight: bold; 
+}
+
+.add-btn { 
+  background: #007bff; 
+  color: white; 
+}
+
+.print-btn { 
+  background: #28a745; 
+  color: white; 
+  float: left; /* Changed from right to left for RTL */
+}
+
+.grand-total { 
+  font-weight: bold; 
+  background-color: #f8f9fa; 
+}
+
+.error { 
+  color: red; 
+  font-size: 0.9em; 
+  margin-top: 5px; 
+  display: none; 
+  text-align: right;
+}
+
+.success { 
+  color: green; 
+  font-size: 0.9em; 
+  margin-top: 5px; 
+  display: none; 
+  text-align: right;
+}
